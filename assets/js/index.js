@@ -1,4 +1,3 @@
-
 document.getElementById('html-progress').style.animation = "move90 2s ease infinite";
 document.getElementById('css-progress').style.animation = "move90 2s ease infinite";
 document.getElementById('js-progress').style.animation = "move85 2s ease infinite";
