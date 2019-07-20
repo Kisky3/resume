@@ -1,0 +1,515 @@
+@charset "UTF-8";
+
+/* -------------------------------------------------
+ * 公共部分
+ * ------------------------------------------------- */
+
+body {
+  background: #e5e5e5 url(../../assets/images/background.png);
+  width: 100%;
+  overflow-x: hidden;
+  padding: 1rem 10%;
+  padding-bottom: 0;
+  box-sizing: border-box;
+  font-size: .9em;
+  min-width: 800px;
+}
+
+body .fa {
+  margin-right: .3em;
+}
+
+body .info-unit {
+  margin-bottom: 1rem;
+}
+
+body .info-unit h2 {
+  font-weight: 700;
+}
+
+body .info-unit h3 {
+  font-weight: 300;
+}
+
+
+/* -------------------------------------------------
+ * 头部部分
+ * ------------------------------------------------- */
+
+.header {
+  display: none;
+}
+
+
+/* -------------------------------------------------
+ * 主体部分
+ * ------------------------------------------------- */
+
+.container .side {
+  position: absolute;
+  width: 20rem;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px 20px #bbb;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.container .side .me {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.container .side .me .portrait {
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  width: 8rem;
+  height: 8rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.container .side .me .portrait .loading {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8rem;
+  height: 4rem;
+  margin: 0 auto;
+}
+
+.container .side .me .portrait .loading span {
+  display: inline-block;
+  width: 8px;
+  height: 100%;
+  border-radius: 4px;
+  background: lightgreen;
+  -webkit-animation: load 1s ease infinite;
+}
+
+@-webkit-keyframes load {
+  0%, 100% {
+    height: 3rem;
+    margin: .5rem 0;
+    background: lightblue;
+  }
+  50% {
+    height: 1rem;
+    margin: 1.5rem 0;
+    background: lightgreen;
+  }
+}
+
+@keyframes {
+  0%, 100% {
+    height: 3rem;
+    margin: .5rem 0;
+    background: lightblue;
+  }
+  50% {
+    height: 1rem;
+    margin: 1.5rem 0;
+    background: lightgreen;
+  }
+}
+
+.container .side .me .portrait .loading span:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+}
+
+.container .side .me .portrait .loading span:nth-child(3) {
+  -webkit-animation-delay: 0.4s;
+}
+
+.container .side .me .portrait .loading span:nth-child(4) {
+  -webkit-animation-delay: 0.6s;
+}
+
+.container .side .me .portrait .loading span:nth-child(5) {
+  -webkit-animation-delay: 0.8s;
+}
+
+.container .side .me .portrait img {
+  display: none;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+
+.container .side .info-unit ul li label {
+  display: inline-block;
+  width: 35%;
+}
+
+.container .side .info-unit ul li span {
+  display: inline-block;
+  vertical-align: top;
+  width: 60%;
+  float: right;
+}
+
+.container .side .info-unit ul li {
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.container .main {
+  position: relative;
+  margin-left: 22rem;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px 20px #bbb;
+  box-sizing: border-box;
+  padding: 1rem;
+  margin-bottom: 30px;
+}
+
+.container .main .info-unit ul {
+  box-sizing: border-box;
+  padding-left: 1.2rem;
+  padding-right: 0.8rem;
+}
+
+.container .main .info-unit ul li {
+  margin-bottom: 1rem;
+  list-style: disc;
+}
+
+.container .main .info-unit ul li h3 .link {
+  font-size: .5rem;
+  border: 1px solid #4db6ac;
+  padding: 1px 3px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin-left: .5rem;
+}
+
+.container .main .info-unit ul li h3 time {
+  text-align: right;
+  float: right;
+}
+
+.container .main .info-unit ul li .info-content li {
+  list-style: circle;
+  margin: 15px 0;
+}
+
+.container .main .info-unit ul li .info-content .fa {
+  font-size: 1em;
+}
+
+
+/* -------------------------------------------------
+ * 文档底部
+ * ------------------------------------------------- */
+
+.footer {
+  width: 100%;
+  margin-top: 1rem;
+  height: 2rem;
+}
+
+.footer p {
+  line-height: 2rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+
+/* -------------------------------------------------
+ * 自定义部分
+ * ------------------------------------------------- */
+
+.fa {
+  font-size: 1.2em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+hr {
+  margin-bottom: .4em;
+}
+
+aside {
+  position: fixed;
+  right: 0;
+  bottom: 5%;
+  z-index: 2;
+}
+
+aside ul li {
+  overflow: hidden;
+  margin-bottom: 10px;
+  -webkit-border-radius: 10px 0 0 10px;
+  border-radius: 19px 0 0 10px;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  background: #1abc9c;
+}
+
+aside ul li a {
+  display: inline-block;
+  width: 80px;
+  height: 38px;
+  line-height: 38px;
+  padding-left: 10px;
+  color: #fff;
+}
+
+.progress {
+  background-color: #f6f6f6;
+  width: 144px;
+  height: 14px;
+  display: inline-block;
+  border-radius: 3px;
+}
+
+.progress-bar {
+  background-color: #1abc9c;
+  height: 14px;
+  border-radius: 3px;
+}
+
+@keyframes move90 {
+  0% {
+    width: 90%;
+  }
+  50% {
+    width: 95%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes move85 {
+  0% {
+    width: 80%;
+  }
+  50% {
+    width: 90%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes move70 {
+  0% {
+    width: 65%;
+  }
+  50% {
+    width: 75%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+
+@keyframes move50 {
+  0% {
+    width: 45%;
+  }
+  50% {
+    width: 55%;
+  }
+  100% {
+    width: 45%;
+  }
+}
+
+@keyframes move40 {
+  0% {
+    width: 35%;
+  }
+  50% {
+    width: 45%;
+  }
+  100% {
+    width: 35%;
+  }
+}
+
+@keyframes move30 {
+  0% {
+    width: 25%;
+  }
+  50% {
+    width: 35%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+
+@media (min-width: 414px) {
+  .switch {
+    position: relative;
+    display: inline-block!important;
+    width: 60px;
+    height: 34px;
+  }
+  .switch input {
+    display: none;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  input:checked+.slider {
+    background-color: #1abc9c;
+  }
+  input:focus+.slider {
+    box-shadow: 0 0 1px #1abc9c;
+  }
+  input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  .slider.round {
+    border-radius: 34px;
+  }
+  .slider.round:before {
+    border-radius: 50%;
+  }
+}
+
+mark {
+  background: rgba(232, 232, 232, 0.8);
+}
+
+.photoframe {
+  position: relative;
+  width: 350px;
+  padding: 3px;
+  border: 6px solid #f6f6f6;
+  margin: 20px 0 20px 0;
+}
+
+.photoframe:before, .photoframe:after, .photo:before, .photo:after {
+  content: " ";
+  position: absolute;
+  border-style: solid;
+  border-color: #1abc9c;
+  padding: 15px;
+}
+
+.photoframe:before {
+  left: -4px;
+  top: -4px;
+  border-width: 4px 0 0 4px;
+}
+
+.photoframe:after {
+  right: -4px;
+  bottom: -4px;
+  border-width: 0 4px 4px 0;
+}
+
+.photo:before {
+  left: -4px;
+  bottom: -4px;
+  border-width: 0 0 4px 4px;
+}
+
+.photo:after {
+  right: -4px;
+  top: -4px;
+  border-width: 4px 4px 0 0;
+}
+
+.phototext {
+  font-size: 12px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.meeting-image {
+  width: 350px;
+}
+
+@media screen and (max-width: 1169px) {
+  .container .info-unit h3 span {
+    display: block;
+  }
+  .container .info-unit h3 span.link {
+    display: inline;
+  }
+  .container .project h3 span {
+    display: inline;
+  }
+  .container .project h3 time {
+    display: block;
+  }
+  .container .main .info-unit ul li h3 time {
+    float: none;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 1034px) {
+  body {
+    padding: 1rem 3%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .container .side {
+    position: static;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .container .main {
+    position: static;
+    margin-left: 0;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    margin-bottom: 30px;
+  }
+  #nav-m {
+    display: none;
+    position: fixed;
+    width: 28px;
+    height: 28px;
+    right: 10px;
+    bottom: 20px;
+    box-shadow: 0 5px 20px #bbb;
+    border-radius: 50%;
+  }
+  #nav-m svg {
+    width: 28px;
+    height: 28px;
+  }
+  aside {
+    display: none;
+  }
+}
+
+
+/*# sourceMappingURL=index.css.map */

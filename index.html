@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="renderer" content="webkit">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>[Resume]向宇 - Hello World, Hello Programming</title>
+    <link rel="shortcut icon" href="assets/images/cat.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/typo.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script>
+        function loading() {
+            document.getElementsByClassName('avatar')[0].style.display = 'block';
+            document.getElementsByClassName('loading')[0].style.display = 'none';
+        }
+    </script>
+  </head>
+  <body>
+    <header class="header"></header>
+    <article class="container">
+      <section class="side" id="side">
+        <!-- 左栏固定开关-->
+        <label class="switch" style="display: none;" onchange="switchFixed()">
+          <input id="cb" type="checkbox">
+          <span class="slider round"></span>
+        </label>
+        <!-- 个人肖像 -->
+        <section class="me">
+          <section class="portrait">
+            <div class="loading">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <!-- 头像照片 -->
+            <img class="avatar" id="photo" src="assets/images/avatar.jpg" onload="loading()">
+          </section>
+          <h1 class="name">向　宇(Xiang Yu)</h1>
+          <h4 class="info-job">フロントエンドエンジニア / 東京</h4>
+        </section>
+        <!-- 基本信息 -->
+        <section class="profile info-unit">
+          <h2>
+            <i class="fa fa-user" aria-hidden="true"></i>基本情報
+          </h2>
+          <hr/>
+          <ul>
+            <li>
+              <label>年齢</label>
+              <span>28歳</span>
+            </li>
+            <li>
+              <label>言語</label>
+              <span>日本語 - 流暢</span>
+              <span>英語 - 流暢</span>
+              <span>北京語 - ネイティブ</span>
+            </li>
+            <li>
+              <label>資格</label>
+              <span>日本語能力試験1級（N1)</span>
+              <span>TOEIC 735点</span>
+              <span>Oracle Certified Java Programmer Silver SE7</span>
+            </li>
+          </ul>
+        </section>
+        <!-- 联系方式 -->
+        <section class="contact info-unit">
+          <h2>
+            <i class="fa fa-phone" aria-hidden="true"></i>連絡先
+          </h2>
+          <hr/>
+          <ul>
+            <li>
+              <label>電話番号</label>
+              <a href="tel:080-6960-5674" target="_blank">080-6960-5674</a>
+            </li>
+            <li>
+              <label>メール</label>
+              <a href="kisky3@126.com" target="_blank">kisky3@126.com</a>
+            </li>
+            <li>
+              <label>ブログ</label>
+              <a href="https://kisky3.github.io/" target="_blank">https://kisky3.github.io/</a>
+            </li>
+            <li>
+              <label>Github</label>
+              <a href="https://github.com/Kisky3" target="_blank">https://github.com/Kisky3</a>
+            </li>
+          </ul>
+        </section>
+        <!-- 技能点 -->
+        <section class="skill info-unit">
+          <h2>
+            <i class="fa fa-code" aria-hidden="true"></i>スキル・特徴
+          </h2>
+          <hr/>
+          <ul>
+            <li>
+              <label>HTML</label>
+              <div class="progress">
+                <div class="progress-bar" id="html-progress"></div>
+              </div>
+            </li>
+            <li>
+              <label>CSS</label>
+              <div class="progress">
+                <div class="progress-bar" id="css-progress"></div>
+              </div>
+            </li>
+            <li>
+              <label>JavaScript</label>
+              <div class="progress">
+                <div class="progress-bar" id="js-progress"></div>
+              </div>
+            </li>
+            <li>
+              <label>React/Redux</label>
+              <div class="progress">
+                <div class="progress-bar" id="react-progress"></div>
+              </div>
+            </li>
+            <li>
+              <label>Node.js</label>
+              <div class="progress">
+                <div class="progress-bar" id="node-progress"></div>
+              </div>
+            </li>
+            <li>
+              <label>CakePHP</label>
+              <div class="progress">
+                <div class="progress-bar" id="cake-progress"></div>
+              </div>
+            </li>
+            <li>
+              <label>Java</label>
+              <div class="progress">
+                <div class="progress-bar" id="java-progress"></div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <div class="stack info-unit">
+          <hr/>
+          <ul>
+            <li>
+              <label>フロントエンド</label>
+              <span>HTML5、CSS3、ES6、TypeScript、React、jQuery、Bootstrap</span>
+            </li>
+            <li>
+              <label>バックエンド</label>
+              <span>Node.js、MySQL、CakePHP</span>
+            </li>
+            <li>
+              <label>其他</label>
+              <span>Git、Markdown、PhotoShop、Dreamweaver、Basic Linux Commands</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="main">
+        <!-- 自我介绍 -->
+        <section class="work info-unit">
+          <h2>
+            <i class="fa fa-pencil" aria-hidden="true"></i>最初の一言
+          </h2>
+          <hr/>
+          <p>ここは向宇のポートフォリオサイトです。</p>
+          <p>これまでに手がけたサーブス、身につけたスキル、個人履歴をまとめています。</p>
+          <p>あなたに、私のことをもっと深く知ってほしいと思って作ったので、ぜひ最後までご覧ください〜！</p>
+        </section>
+      </section>
+      <section class="main">
+        <!-- 教育经历 -->
+        <section class="edu info-unit">
+          <h2>
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>学歴
+          </h2>
+          <hr/>
+          <ul>
+            <li>
+              <h3>
+                <span>広西大学農学部園芸学科（国立211大学）</span>
+                <time>2009.9-2013.9</time>
+              </h3>
+              <p>
+              <mark>GPA3.1、総合成績評価ランキング8位でした。</mark>日本という中国と一衣帯水の隣国に興味を持ち、日本語は独学で2年半ほど勉強し続けて、N1(日本語能力試験1級)を合格しました。
+              </p>
+            </li>
+            <li>
+              <h3>
+                <span>岐阜大学応用生物科学部生産環境科学学科大学院（大学院）</span>
+                <time>2014.4-2016.3</time>
+              </h3>
+              <p>
+              <mark>推薦入学試験を合格した後、</mark>学校間連携プロジェクトを利用して岐阜大学応用生物科学部で2年間勉強していました。岐阜大学学部奨学金2年連続で受賞しました。
+              <p>でも心の底から農業より、また将来的に可能性の大きいIT業界に関わっていきたいと考え、卒業後迷わずにIT業界に飛び込んできました！
+              </p>
+              </p>
+            </li>
+          </ul>
+        </section>
+      </section>
+      <!-- 工作经历 -->
+      <section class="main">
+        <section class="work info-unit">
+          <h2>
+            <i class="fa fa-shopping-bag" aria-hidden="true"></i>経歴
+          </h2>
+          <hr/>
+          <ul>
+            <li>
+              <h3>
+                <span>TISソリューションリンク株式会社</span>
+                <time>2016年4月 – 2018年7月</time>
+              </h3>
+              <ul class="info-content">
+                <li>未経験の新卒として入社して、様々なシステムの運用・保守作業を担当しています。 
+                  <p>
+                  <mark>最初の業務でHTML、CSS3、JavaScript、Bootstrap3を利用して、</mark>NMAPS管理ツールDashboard（管理画面）システム全般を担当しています。
+                  その時は初めてフロントエンド開発の醍醐味を感じました！
+                  </p>
+                </li>
+                <li>それから 
+                  <mark>PhotoshopとDreamweaver</mark>を利用して、業務外でも少しずつフロントの知識を勉強している。未経験で入社1年以内独学で
+                  <mark>JavaSilverSE７資格</mark>も取得しました。
+                </li>
+                <li>
+                  <p>業務中に色々なサービスを経験して、特にサイトのデザインや表現などの部分に興味があると気付きました。 色々な技術や表現方へのこだわりもあり、 世界中の人々を喜ばせるサービスを提供できるフロントエンドエンジニアを目指すようになるため、転職しました。 
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3>
+                <span>株式会社スペースエージェント</span>
+                <time>2018年7月 – 現在</time>
+              </h3>
+              <ul class="info-content">
+                <li>
+                  <p>リリースは週1回の早いスピードで、毎日優れたメンバーたちと一緒に楽しんでシステム開発をしています。
+                  </p>
+                  <p>メインは「民泊物件.com」と「スペースクラウド」
+                  <mark>(React、Redux)</mark>の新機能開発と保守作業です。<mark>MVCフレームワーク</mark>によって、既存ソースのリファクタリングも意識して行動しています。
+                  </p>
+                </li>
+                <li>
+                  <p>他は
+                  <mark>stylelintの導入</mark>、全体スタイルを統一するため、React共通componentを書き直し、StyleGuideページも作成しています。
+                  </p>
+                </li>
+                <li>最近、バックエンド
+                  <mark>CakePHP、SQL関連</mark>の開発も一部担当しています。アウトプットとして、自発に社内勉強会(SQL、Linuxコマンドなど)も行っています。
+                </li>
+                <div class="photoframe">
+                  <a class="photo" target="_blank" href="https://qiita.com/Kisky3/items/7ae8bb88ea698a96919d">
+                    <img class="meeting-image" src="assets/images/meeting.jpg">
+                  </a>
+                </div>
+                <p class="phototext">(勉強会の様子)</p>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </section>
+      <section class="main">
+        <!-- 项目经验 -->
+        <section class="project info-unit">
+          <h2>
+            <i class="fa fa-terminal" aria-hidden="true"></i>ポートフォリオ・作品
+          </h2>
+          <hr/>
+          <ul>
+            <li>
+              <h3>
+                <span>民泊物件.com</span>
+                <span class="link">
+                  <a href="https://minpaku-bukken.com/" target="_blank">Demo あり</a>
+                </span> 
+              </h3>
+              <ul class="info-content">
+                <div class="photoframe">
+                  <a class="photo" target="_blank" href="https://minpaku-bukken.com/">
+                    <img class="meeting-image" src="assets/images/minpaku.png">
+                    <p></p>
+                  </a>
+                </div>
+                <li>
+                  <i class="fa fa-paper-plane-o" aria-hidden="true"></i>React/Redux + TypeScript + ES6 + CakePHP3 + MySQL + AWS
+                  <br>
+                  <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>マイン担当機能：まとめ問い合わせ、全体スタイルのリニュアール、保守など
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3>
+                <span>スペースクラウド</span>
+                <span class="link">
+                  <a href="https://space-cloud.jp" target="_blank">Demo あり</a>
+                </span>
+              </h3>
+              <ul class="info-content">
+                <div class="photoframe">
+                  <a class="photo" target="_blank" href="https://space-cloud.jp">
+                    <img class="meeting-image" src="assets/images/spacecloud.png">
+                    <p></p>
+                  </a>
+               </div>
+              <li>
+                  <i class="fa fa-paper-plane-o" aria-hidden="true"></i>React/Redux + TypeScript  + ES6 + CakePHP3 + MySQL + AWS
+                  <br>
+                  <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>マイン担当機能：物件登録ページのReact実装、タスクガイドの実装、新機能通知機能の実装、全体スタイルのリニュアールなど
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3>
+                <span>スペースクラウドStyleGuide</span>
+                <span class="link">
+                  <a href="https://kisky3.github.io/2019/06/20/%E7%B3%BB%E7%BB%9F%E5%BC%8F%E6%A0%B7%E7%BB%9F%E4%B8%80%E9%A1%B5%E9%9D%A2%E7%9A%84%E5%88%B6%E4%BD%9C/" target="_blank">Demoなし　説明あり</a>
+                </span>
+              </h3>
+              <ul class="info-content">
+                <div class="photoframe">
+                  <a class="photo" target="_blank" href="https://kisky3.github.io/2019/06/20/%E7%B3%BB%E7%BB%9F%E5%BC%8F%E6%A0%B7%E7%BB%9F%E4%B8%80%E9%A1%B5%E9%9D%A2%E7%9A%84%E5%88%B6%E4%BD%9C/">
+                    <img class="meeting-image" src="assets/images/styleguide.png">
+                    <p></p>
+                  </a>
+               </div>
+              <li>
+                  <i class="fa fa-paper-plane-o" aria-hidden="true"></i> HTML + CSS + ES6 + React/Redux
+                  <br>
+                  <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>全般担当：デザイン、設計、実装、テストまで</li>
+              </ul>
+            </li>
+            <li>
+              <h3>
+                <span>個人練習用：三目並べゲーム</span>
+                <span class="link">
+                  <a href="https://kisky3.github.io/react-tutorial" target="_blank">Demo あり</a>
+                </span>
+              </h3>
+              <ul class="info-content">
+                <div class="photoframe">
+                  <a class="photo" target="_blank" href="https://kisky3.github.io/react-tutorial">
+                    <img class="meeting-image" src="assets/images/tictactoe.png">
+                  </a>
+               </div>
+              <li>
+                  <i class="fa fa-paper-plane-o" aria-hidden="true"></i> HTML + CSS + JavaScript + React/Redux
+                  <br>
+                  <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>全般担当：デザイン、設計、実装、テストまで</li>
+              </ul>
+            </li>
+            <li>
+              <h3>
+                <span>個人練習用：League of Legends シングルページ</span>
+                <span class="link">
+                  <a href="https://kisky3.github.io/Jirengu/Jirengu_task13/index" target="_blank">Demo あり</a>
+                </span>
+              </h3>
+              <ul class="info-content">
+                <div class="photoframe">
+                  <a class="photo" target="_blank" href="https://kisky3.github.io/Jirengu/Jirengu_task13/index">
+                    <img class="meeting-image" src="assets/images/lol.png">
+                  </a>
+               </div>
+              <li>
+                  <i class="fa fa-paper-plane-o" aria-hidden="true"></i> HTML + CSS + JavaScript
+                  <br>
+                  <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>全般担当：デザイン、設計、実装まで</li>
+              </ul>
+            </li>
+            <li>
+              <h3>
+                <span>個人練習用：音楽Player</span>
+                <span class="link">
+                  <a href="https://kisky3.github.io/Jirengu/Jirengu_task31/music-player/index.html" target="_blank">Demo あり</a>
+                </span>
+              </h3>
+              <ul class="info-content">
+                <div class="photoframe">
+                  <a class="photo" target="_blank" href="https://kisky3.github.io/Jirengu/Jirengu_task31/music-player/index.html">
+                    <img class="meeting-image" src="assets/images/music.png">
+                  </a>
+               </div>
+              <li>
+                  <i class="fa fa-paper-plane-o" aria-hidden="true"></i> HTML + CSS + JavaScript(Audio Objectを利用する/フレームワークなしすべてJavaScriptで実装)
+                  <br>
+                  <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>全般担当：デザイン、設計、実装まで</li>
+              </ul>
+            </li>
+            <li>
+              <h3>
+                <span>個人練習用：Xiang Yu's Blog</span>
+                <span class="link">
+                  <a href="https://kisky3.github.io/" target="_blank">Demo あり</a>
+                </span>
+              </h3>
+              <ul class="info-content">
+                <div class="photoframe">
+                  <a class="photo" target="_blank" href="https://kisky3.github.io/">
+                    <img class="meeting-image" src="assets/images/blog.png">
+                  </a>
+               </div>
+              <li>
+                  <i class="fa fa-paper-plane-o" aria-hidden="true"></i> Hexo + Github Page + HTML + CSS
+                  <br>
+                  <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>全般担当：デザイン、設計、実装まで
+                </li>
+              </ul>
+            </li>
+            ※その他一部の練習課題は環境設定が必要のため、プレビューの用意はまだできていない。詳細はGithubにご覧ください。
+        </section>
+      </section>
+      <section class="main">
+        <!-- 总结 -->
+        <section class="work info-unit">
+          <h2>
+            <i class="fa fa-pencil" aria-hidden="true"></i>最後の一言
+          </h2>
+          <hr/>
+          <p>日々の忙しさについ忘れてしまいがちですが、今の私があるのは色んな人たちのサポートのおかげです。</p>
+          <p>初めて退職の際に応援してくれた人、技術的に未熟な私にもお仕事を紹介してくださるエージェント、
+          スキルを磨ける環境で働かせてくださった会社に、本当に心から感謝しています。</p>
+          <p>また、エンジニアリングが好きなので、生涯フロントエンジニアとして社会に貢献し続けたいとも思っています。</p>
+          <p>日々進化し続ける技術をキャッチアップするための研鑽はもちろんのこと、課題を解決できるよう、ユーザーの目線を培っていく必要があります。
+　　　　　 <p>まだまだ至らない点はたくさんありますが、時代に合わせた技術を追いかけつつ、世界中のユーザー様に寄り添ったエンジニアリングができるよう、心がけていきます！</p>
+          <p>最後までご覧いただき、誠にありがとうございました！！！</p>
+        </section>
+      </section>
+    </article>
+    <footer class="footer">
+      <p>© 2019 Created By Xiang Yu
+      </p>
+    </footer>
+    <!-- 侧栏 -->
+    <aside>
+      <ul>
+        <li>
+          <a href="#">Page Top</a>
+        </li>
+      </ul>
+    </aside>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
