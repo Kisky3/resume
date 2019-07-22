@@ -411,6 +411,14 @@ mark {
   margin: 20px 0 20px 0;
 }
 
+.photoframe._full {
+  position: relative;
+  width: 100%;
+  padding: 3px;
+  border: 6px solid #f6f6f6;
+  margin: 20px 0 20px 0;
+}
+
 .photoframe:before, .photoframe:after, .photo:before, .photo:after {
   content: " ";
   position: absolute;
@@ -451,6 +459,10 @@ mark {
 
 .meeting-image {
   width: 350px;
+}
+
+.meeting-image-preview {
+  width: 100%;
 }
 
 @media screen and (max-width: 1169px) {

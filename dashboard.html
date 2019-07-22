@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="renderer" content="webkit">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>[Resume]向宇 - Hello World, Hello Programming</title>
+    <link rel="shortcut icon" href="assets/images/cat.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/typo.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script>
+        function loading() {
+            document.getElementsByClassName('avatar')[0].style.display = 'block';
+            document.getElementsByClassName('loading')[0].style.display = 'none';
+        }
+    </script>
+  </head>
+  <body>
+    <header class="header"></header>
+    <article class="container">
+      <section class="side" id="side">
+        <!-- 左栏固定开关-->
+        <label class="switch" style="display: none;" onchange="switchFixed()">
+          <input id="cb" type="checkbox">
+          <span class="slider round"></span>
+        </label>
+        <!-- 个人肖像 -->
+        <section class="me">
+          <section class="portrait">
+            <div class="loading">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <!-- 头像照片 -->
+            <img class="avatar" id="photo" src="assets/images/avatar.jpg" onload="loading()">
+          </section>
+          <h1 class="name">向　宇(Xiang Yu)</h1>
+          <h4 class="info-job">フロントエンドエンジニア / 東京</h4>
+        </section>
+        <!-- 基本信息 -->
+        <section class="profile info-unit">
+          <h2>
+            <i class="fa fa-user" aria-hidden="true"></i>基本情報
+          </h2>
+          <hr/>
+          <ul>
+          <li>
+            <label>年齢</label>
+            <span>28歳</span>
+          </li>
+          <li>
+            <label>言語</label>
+            <span>日本語 - ビジネス</span>
+            <span>英語 - ビジネス</span>
+            <span>北京語 - ネイティブ</span>
+          </li>
+          <li>
+            <label>資格</label>
+            <span>日本語能力試験1級（N1)</span>
+            <span>TOEIC 735点</span>
+            <span>Oracle Certified Java Programmer Silver SE7</span>
+          </li>
+          </ul>
+        </section>
+        <!-- 联系方式 -->
+        <section class="contact info-unit">
+          <h2>
+            <i class="fa fa-phone" aria-hidden="true"></i>連絡先
+          </h2>
+          <hr/>
+          <ul>
+          <li>
+            <label>電話番号</label>
+            <a href="tel:080-6960-5674" target="_blank">080-6960-5674</a>
+          </li>
+          <li>
+            <label>メール</label>
+            <a href="kisky3@126.com" target="_blank">kisky3@126.com</a>
+          </li>
+          <li>
+            <label>ブログ</label>
+            <a href="https://kisky3.github.io/" target="_blank">https://kisky3.github.io/</a>
+          </li>
+          <li>
+            <label>Github</label>
+            <a href="https://github.com/Kisky3" target="_blank">https://github.com/Kisky3</a>
+          </li>
+          </ul>
+        </section>
+        <!-- 技能点 -->
+        <section class="skill info-unit">
+          <h2>
+            <i class="fa fa-code" aria-hidden="true"></i>スキル・特徴
+          </h2>
+          <hr/>
+          <ul>
+          <li>
+            <label>HTML</label>
+            <div class="progress">
+              <div class="progress-bar" id="html-progress"></div>
+            </div>
+          </li>
+          <li>
+            <label>CSS</label>
+            <div class="progress">
+              <div class="progress-bar" id="css-progress"></div>
+            </div>
+          </li>
+          <li>
+            <label>JavaScript</label>
+            <div class="progress">
+              <div class="progress-bar" id="js-progress"></div>
+            </div>
+          </li>
+          <li>
+            <label>React/Redux</label>
+            <div class="progress">
+              <div class="progress-bar" id="react-progress"></div>
+            </div>
+          </li>
+          <li>
+            <label>Node.js</label>
+            <div class="progress">
+              <div class="progress-bar" id="node-progress"></div>
+            </div>
+          </li>
+          <li>
+            <label>CakePHP</label>
+            <div class="progress">
+              <div class="progress-bar" id="cake-progress"></div>
+            </div>
+          </li>
+          <li>
+            <label>Java</label>
+            <div class="progress">
+              <div class="progress-bar" id="java-progress"></div>
+            </div>
+          </li>
+          </ul>
+        </section>
+        <div class="stack info-unit">
+          <hr/>
+          <ul>
+          <li>
+            <label>フロントエンド</label>
+            <span>HTML5、CSS3、ES6、TypeScript、React、jQuery、Bootstrap</span>
+          </li>
+          <li>
+            <label>バックエンド</label>
+            <span>Node.js、MySQL、CakePHP</span>
+          </li>
+          <li>
+            <label>其他</label>
+            <span>Git、Markdown、PhotoShop、Dreamweaver、Basic Linux Commands</span>
+          </li>
+          </ul>
+        </div>
+      </section>
+    
+      <section class="main">
+        <!-- 项目经验 -->
+        <section class="project info-unit">
+          <h2>
+            <i class="fa fa-terminal" aria-hidden="true"></i>ポートフォリオ・作品
+          </h2>
+          <hr/>
+          <ul>
+          <li>
+            <h3>
+              <span>天気検索ダミーサイト</span>
+            </h3>
+            <p>中国の無料公開天気APIを利用して、ダミーページを作成しました。</p>
+            <p>グラフはChart.jsを利用しています。モーダルとレスポンスはBootstrapを利用しています。</p>
+            <p>テーブルの生成とデータの加工はjQueryのdataTableで実装しました。</p>
+            <ul class="info-content">
+            <div class="photoframe _full">
+              <div class="photo">
+                <img class="meeting-image-preview" src="assets/images/1.png">
+              </div>
+            </div>
+            <div class="photoframe _full">
+              <div class="photo">
+                <img class="meeting-image-preview" src="assets/images/2.png">
+              </div>
+            </div>
+            <div class="photoframe _full">
+              <div class="photo">
+                <img class="meeting-image-preview" src="assets/images/3.png">
+              </div>
+            </div>
+            <div class="photoframe _full">
+              <div class="photo">
+                <img class="meeting-image-preview" src="assets/images/4.png">
+              </div>
+            </div>
+            <div class="photoframe _full">
+              <div class="photo">
+                <img class="meeting-image-preview" src="assets/images/5.png">
+              </div>
+            </div>
+            <div class="photoframe _full">
+              <div class="photo">
+                <img class="meeting-image-preview" src="assets/images/6.png">
+              </div>
+            </div>
+        </section>
+    </article>
+    <footer class="footer">
+      <p>© 2019 Created By Xiang Yu 
+      </p>
+    </footer>
+    <!-- 侧栏 -->
+    <aside>
+      <ul>
+      <li>
+        <a href="#">Page Top</a>
+      </li>
+      <li>
+        <a href="./index.html">Home</a>
+      </li>
+      </ul>
+    </aside>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
